@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crayon Shinchan: Shiro and the Coal Town</title>
+</head>
+<body>
+    <!-- 网页开头插入图片 -->
+    <table>
+        <tr>
+            <td>
+                <img src="EX2-HTML\assets\shin-chan-banner.jpg" alt="Header Image 1" width="1000" height="250">
+            </td>
+            <td>
+                <img src="EX2-HTML\assets\naughtiest-son.jpg" alt="Header Image 2" width="400" height="250">
+            </td>
+        </tr>
+    </table>
+
+    <center>
+        <h1>Crayon Shinchan: Shiro and the Coal Town</h1>
+        <h2>Available on: Nintendo Switch and Windows PC</h2>
+    </center>
+
+    <!-- 在"适用的平台"下面插入视频 -->
+    <center>
+        <video controls width="600">
+            <source src="EX2-HTML\assets\shinchan-and-the-coal-town.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </center>
+
+    <!-- 导航栏 -->
+    <div>
+        <a href="#characters">Characters</a> | 
+        <a href="#vote">Vote</a> | 
+        <a href="#video">Video</a>
+    </div>
+
+    <!-- 主要内容 -->
+    <div>
+        <div id="characters">
+            <h2><center>Main Characters</center></h2>
+            
+            <!-- 使用表格来排列人物介绍 -->
+            <table>
+                <!-- 第一行人物 -->
+                <tr>
+                    <!-- Shinchan -->
+                    <td align="center">
+                        <h3>Shinnosuke Nohara (Shinchan)</h3>
+                        <img src="EX2-HTML\assets\character-shinchan.png" alt="Shinchan" width="150" height="150">
+                        <p>The mischievous 5-year-old protagonist known for his hilarious antics and love of choco chips.</p>
+                    </td>
+
+                    <!-- Mother -->
+                    <td align="center">
+                        <h3>Misae Nohara (Mom)</h3>
+                        <img src="EX2-HTML\assets\character-misae.webp" alt="Misae" width="150" height="150">
+                        <p>Shinchan's short-tempered but loving mother, always trying to keep him in line.</p>
+                    </td>
+
+                    <!-- Father -->
+                    <td align="center">
+                        <h3>Hiroshi Nohara (Dad)</h3>
+                        <img src="EX2-HTML\assets\character-hiroshi.webp" alt="Hiroshi" width="150" height="150">
+                        <p>The laid-back father who works at a company and enjoys his evening beer.</p>
+                    </td>
+                </tr>
+
+                <!-- 第二行人物 -->
+                <tr>
+                    <!-- Himawari -->
+                    <td align="center">
+                        <h3>Himawari Nohara (Sister)</h3>
+                        <img src="EX2-HTML\assets\character-himawari.png" alt="Himawari" width="150" height="150">
+                        <p>Shinchan's baby sister who often shows surprising intelligence.</p>
+                    </td>
+
+                    <!-- Shiro -->
+                    <td align="center">
+                        <h3>Yukino Nohara (Shiro)</h3>
+                        <img src="EX2-HTML\assets\character-shiro.png" alt="Shiro" width="150" height="150">
+                        <p>The family dog — small, fluffy, and sometimes the most sensible member of the household.</p>
+                    </td>
+
+                    <!-- Toru Kazama -->
+                    <td align="center">
+                        <h3>Toru Kazama</h3>
+                        <img src="EX2-HTML\assets\character-toru-kazama.webp" alt="Kazama" width="150" height="150">
+                        <p>The smart and responsible friend of Shinchan, often the voice of reason in the group.</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 投票部分 -->
+        <div id="vote">
+            <form>
+                <h2>Who's your favorite?</h2>
+                
+                <label for="favorite">Select Character:</label>
+                <select id="favorite">
+                    <option value="shinchan">Shinchan</option>
+                    <option value="shiro">Shiro</option>
+                    <option value="misae">Misae</option>
+                    <option value="hiroshi">Hiroshi</option>
+                </select>
+
+                <div>
+                    <label>Character not listed?</label>
+                    <input type="text" placeholder="Enter character name">
+                </div>
+
+                <div>
+                    <label>Why do you like this character?</label><br>
+                    <textarea rows="4" cols="50" placeholder="State your reasons here..."></textarea>
+                </div>
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label>Name: <input type="text" required></label><br>
+                    
+                    <label>Gender:
+                        <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female"> Female
+                    </label><br>
+                    
+                    <label>Date of Birth: <input type="date" required></label><br>
+                    <label>Email: <input type="email" required></label>
+                </fieldset>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <div>
+        <p>© 2025 The Nohara Family. All rights reserved.</p>
+        <p>Website Design: Programming Exercise by Nanjing Institute of Technology</p>
+    </div>
+    
+</body>
+</html>
